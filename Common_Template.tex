@@ -1,0 +1,220 @@
+% Template credit to University of Toronto CSC411 and CSC320
+%------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{subcaption}
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+% Below are optional packages
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ : \hmwkTitle} % Top center head
+%\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+
+%------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+	%\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+	%\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+	%\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+	%\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+\setcounter{homeworkProblemCounter}{0}
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+	\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+	\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+	\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+	\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+	\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+	\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+	\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+	\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+	\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+	\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+
+%=================================================================
+
+%------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Assignment\ \#} % Assignment title
+\newcommand{\hmwkClass}{Class\ Code} % Course/class
+\newcommand{\hmwkAuthorName}{Name} % Your name
+
+%------------------------------------------------------------------------------------
+%	TITLE PAGE
+%------------------------------------------------------------------------------------
+
+\title{
+	\vspace{2in}
+	\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+	%	\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+	\vspace{0.1in}
+	\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+
+% Insert date here if you want it to appear below your name
+\date{\today} 
+
+%------------------------------------------------------------------------------------
+
+\begin{document}
+	
+	\maketitle
+	\clearpage
+	
+	%---------------------------------------------------------------------------------
+	%	PROBLEM 1
+	%---------------------------------------------------------------------------------
+	\begin{homeworkProblem}
+		\noindent \textit{Question}
+		
+		
+	\end{homeworkProblem}
+	\clearpage
+	
+	%----------------------------------------------------------------------------------
+	
+	
+	
+	%---------------------------------------------------------------------------------
+	%	PROBLEM 2: 
+	%	Inserting Images
+	%---------------------------------------------------------------------------------
+	\begin{homeworkProblem}
+		\noindent \textit{Images}
+		%		\begin{figure*}[!ht]
+		%		
+		%			\begin{subfigure}{.35\textwidth}
+		%				\includegraphics[width=.35\linewidth]{images/1.jpg}
+		%				\caption{caption}
+		%				\label{fig:1}
+		%			\end{subfigure}
+		%		
+		%			\caption{}
+		%			\label{fig:pcs}
+		%		\end{figure*}
+		%	
+		%		\begin{figure}[!ht]
+		%			\includegraphics[width=.35\linewidth]{images/1.jpg}
+		%			\caption{caption}
+		%			\label{fig:1}
+		%		\end{figure}
+		
+	\end{homeworkProblem}
+	\clearpage
+	
+	%----------------------------------------------------------------------------------
+	
+	
+	
+	
+	%---------------------------------------------------------------------------------
+	%	PROBLEM 3: 
+	%	Pseudocode
+	%---------------------------------------------------------------------------------
+	\begin{homeworkProblem}
+		\noindent \textit{Pseudocode}
+		\begin{algorithm}
+			\caption{Process(A, B)}\label{euclid}
+			\begin{algorithmic}[1]
+				
+				\If {$A = B$}
+				\State $C = \text{ empty list}$ \Comment comment
+				\State \Return $true$
+				\Else
+				
+				\While {$A \neq \emptyset$}
+				\State Do something
+				\EndWhile
+				
+				\EndIf
+				
+			\end{algorithmic}	
+		\end{algorithm}
+		
+		
+	\end{homeworkProblem}
+	\clearpage
+	
+	%----------------------------------------------------------------------------------
+	
+	
+	
+	%---------------------------------------------------------------------------------
+	%	PROBLEM 4: 
+	%   Code
+	%---------------------------------------------------------------------------------
+	\begin{homeworkProblem}
+		
+		\begin{lstlisting}[language=Python, caption=Caption]
+	def function(a):
+	  return a
+		\end{lstlisting}
+		
+	\end{homeworkProblem}
+	\clearpage
+	
+	%----------------------------------------------------------------------------------
+	
+\end{document}
