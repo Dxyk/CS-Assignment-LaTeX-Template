@@ -15,6 +15,7 @@
 \usepackage{courier} % Required for the courier font
 % Below are optional packages
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{float}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
@@ -123,9 +124,11 @@
 	\maketitle
 	\clearpage
 	
+	%=========================================================
 	%---------------------------------------------------------------------------------
-	%	PROBLEM 1
+	%	PROBLEM 1: 
 	%---------------------------------------------------------------------------------
+	%=========================================================
 	\begin{homeworkProblem}
 		\noindent \textit{Question}
 		
@@ -133,47 +136,42 @@
 	\end{homeworkProblem}
 	\clearpage
 	
-	%----------------------------------------------------------------------------------
-	
-	
-	
+	%=========================================================
 	%---------------------------------------------------------------------------------
 	%	PROBLEM 2: 
-	%	Inserting Images
+	%	Images
 	%---------------------------------------------------------------------------------
+	%=========================================================
 	\begin{homeworkProblem}
 		\noindent \textit{Images}
-		%		\begin{figure*}[!ht]
-		%		
-		%			\begin{subfigure}{.35\textwidth}
-		%				\includegraphics[width=.35\linewidth]{images/1.jpg}
-		%				\caption{caption}
-		%				\label{fig:1}
-		%			\end{subfigure}
-		%		
-		%			\caption{}
-		%			\label{fig:pcs}
-		%		\end{figure*}
-		%	
-				\begin{figure}[!ht]
+
+			\begin{figure}[!htb]
+				\begin{subfigure}{.45\textwidth}
+					\includegraphics[width=\linewidth]{images/1.jpg}
 					\centering
-					\includegraphics[width=.35\linewidth]{images/1.jpg}
-					\caption{caption}
-					\label{fig:1}
-				\end{figure}
-		
+					\caption{img1}
+					\label{fig:1.1}
+				\end{subfigure}
+				\begin{subfigure}{.45\textwidth}
+					\includegraphics[width=\linewidth]{images/1.jpg}
+					\centering
+					\caption{img2}
+					\label{fig:1.2}
+				\end{subfigure}
+				\centering
+				\caption{}
+				\label{fig:1}
+			\end{figure}
+
 	\end{homeworkProblem}
 	\clearpage
 	
-	%----------------------------------------------------------------------------------
-	
-	
-	
-	
+	%=========================================================
 	%---------------------------------------------------------------------------------
-	%	PROBLEM 3: 
+	%	PROBLEM 3:
 	%	Pseudocode
 	%---------------------------------------------------------------------------------
+	%=========================================================
 	\begin{homeworkProblem}
 		\noindent \textit{Pseudocode}
 		\begin{algorithm}
@@ -198,14 +196,12 @@
 	\end{homeworkProblem}
 	\clearpage
 	
-	%----------------------------------------------------------------------------------
-	
-	
-	
+	%=========================================================
 	%---------------------------------------------------------------------------------
-	%	PROBLEM 4: 
-	%   Code
+	%	PROBLEM 3:
+	%	Code Listing
 	%---------------------------------------------------------------------------------
+	%=========================================================
 	\begin{homeworkProblem}
 		
 		\begin{lstlisting}[language=Python, caption=Caption]
@@ -216,6 +212,10 @@
 	\end{homeworkProblem}
 	\clearpage
 	
-	%----------------------------------------------------------------------------------
+	%=========================================================
+	%---------------------------------------------------------------------------------
+	%	End
+	%---------------------------------------------------------------------------------
+	%=========================================================
 	
 \end{document}
