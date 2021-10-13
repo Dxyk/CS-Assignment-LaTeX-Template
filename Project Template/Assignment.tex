@@ -1,0 +1,120 @@
+\documentclass[english]{article}
+\input{preamble.tex}
+
+\begin{document}
+
+% ========================================
+% TITLE PAGE
+% ========================================
+\input{title_page}
+\nocite{*}
+\maketitle
+
+% First page starts from after the title page
+\setcounter{page}{1}
+
+% ========================================
+% Section 1
+% Math
+% ========================================
+\clearpage
+\pagebreak
+\section{Pseudocode}
+
+\subsection{Aligned Equations}
+
+\begin{align*}
+  u & = x \cos\theta - y \sin\theta \\
+  v & = x \sin\theta + y \cos\theta
+\end{align*}
+
+\subsection{Matrices}
+
+\begin{align*}
+  R_{cw} = \begin{pmatrix}
+             \cos \theta  & \sin \theta \\
+             -\sin \theta & cos \theta
+           \end{pmatrix}
+\end{align*}
+
+
+% ========================================
+% Section 2
+% Figures
+% ========================================
+\clearpage
+\pagebreak
+\section{Figures}
+
+\par Insert Paragraph here. Figure Reference Figure~\ref{fig:1}
+
+\begin{figure}[!htb]
+  \begin{subfigure}{.45\textwidth}
+    \includegraphics[width=\linewidth]{Images/1.jpg}
+    \centering
+    \caption{img1}
+    \label{fig:1.1}
+  \end{subfigure}
+  \begin{subfigure}{.45\textwidth}
+    \includegraphics[width=\linewidth]{Images/1.jpg}
+    \centering
+    \caption{img2}
+    \label{fig:1.2}
+  \end{subfigure}
+  \centering
+  \caption{Caption}
+  \label{fig:1}
+\end{figure}
+
+% ========================================
+% Section 3
+% Pseudocode
+% ========================================
+\clearpage
+\pagebreak
+\section{Pseudocode}
+
+\par Algorithm Reference Algorithm~\ref{algo:1}
+
+\begin{algorithm}
+  \caption{Process(A, B)}\label{algo:1}
+  \begin{algorithmic}[1]
+
+    \If {$A = B$}
+    \State $C = \text{ empty list}$ \Comment comment
+    \State \Return $true$
+    \Else
+
+    \While {$A \neq \emptyset$}
+    \State Do something
+    \EndWhile
+
+    \EndIf
+
+  \end{algorithmic}
+\end{algorithm}
+
+% ========================================
+% Section4
+% Code Listing
+% ========================================
+\clearpage
+\pagebreak
+\section{Pseudocode}
+
+Listing~\ref{lst:1}
+
+\begin{lstlisting}[language=Python, caption=Caption, label=lst:1]
+def function(a):
+  return a
+\end{lstlisting}
+
+
+% ========================================
+% Bibliography
+% ========================================
+\clearpage
+\pagebreak
+\printbibliography
+
+\end{document}
