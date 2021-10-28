@@ -1,58 +1,51 @@
-\usepackage{caption}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{babel}
-\usepackage{tikz}
-\usepackage{pgf}
-\usepackage{float}
-\usepackage{setspace}
-\usepackage[letterpaper, top=0.7in, bottom=0.7in, right=1in, left=1in]{geometry}
-\usepackage{hyperref}
-\usepackage{graphicx} % Required to insert images
-\usepackage{parskip}
-\usepackage{xcolor}
-\usepackage{lastpage}
-\usepackage{biblatex}
-\usepackage{listings} % Required for insertion of code
-\usepackage{enumitem}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{fancyhdr} % Required for custom headers
-
-\usepackage{pgfplots}
-\usepackage{pgfplotstable}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{colortbl}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{csquotes}
-\usepackage[nottoc]{tocbibind}
-
-\usepackage{algorithm}
-\usepackage[noend]{algpseudocode}
-
-\usepackage{lastpage} % Required to determine the last page for the footer
-\usepackage{extramarks} % Required for headers and footers
-% \usepackage[usenames,dvipsnames]{color} % Required for custom colors
-% \usepackage{courier} % Required for the courier font
-% Below are optional packages
-
+% Document
+\usepackage[letterpaper, top=0.7in, bottom=0.7in, right=1in, left=1in]{geometry} % Page size and margins
+\usepackage{enumitem} % Enumerate
+\usepackage{extramarks} % Required for headers and footer
 \usepackage{fancyhdr} % Required for custom headers
 \usepackage{lastpage} % Required to determine the last page for the footer
-\usepackage{extramarks} % Required for headers and footers
-\usepackage{graphicx} % Required to insert images
-\usepackage{subcaption}
-\usepackage{listings} % Required for insertion of code
+\usepackage{parskip} % Blank line breaks paragraphs
+\usepackage{setspace} % For set spacing
+
+% Text
+\usepackage[utf8]{inputenc} % Input encoding settings
+\usepackage[T1]{fontenc} % Font for special characters
 \usepackage{courier} % Required for the courier font
-% Below are optional packages
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{float}
-\usepackage{algorithm}
-\usepackage[noend]{algpseudocode}
+\usepackage{babel} % Special Characters
+\usepackage{xcolor} % Colours
+\usepackage{hyperref} % For adding hyperlinks
 
+% Bibliography
+% https://tex.stackexchange.com/a/25702/214112
+\usepackage{biblatex} % Bibliography package
+\usepackage{csquotes} % Quotation marks used by biblatex
+\usepackage[nottoc]{tocbibind} % Automatically add bibliography
+
+% Math packages
+\usepackage{amsmath} % Basic math package
+\usepackage{amssymb} % More math symbols
+\usepackage{array} % Used by matrices
+
+% Algorithm packages
+% See https://tex.stackexchange.com/a/230789/214112
+\usepackage{algorithm} % Float wrapper for algorithms
+\usepackage[noend]{algpseudocode} % Layout for algorithmicx.
+\usepackage{algorithmicx} % Upgraded algorithmic
+\usepackage{listings} % Required for insertion of code
+
+% Tables
+\usepackage{booktabs} % Tables
+\usepackage{colortbl} % Make colored tables
+
+% Figures
+\usepackage{graphicx} % Required to insert images
+\usepackage{float} % Figure placement
+\usepackage{caption} % For adding captions to figures
+\usepackage{subcaption}
+\usepackage{tikz} % For creating graphs
+\usepackage{pgf} % For creating graphs
+\usepackage{pgfplots} % For creating graphs
+\usepackage{pgfplotstable} % For creating graphs
 
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
